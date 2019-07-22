@@ -1,0 +1,15 @@
+# Build files #
+#############
+node_modules
+dist
+
+# IDE files #
+#############
+nbproject
+.~lock.*
+.buildpath
+.idea
+.project
+.settings
+composer.lock
+*.code-workspace

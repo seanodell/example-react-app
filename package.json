@@ -1,0 +1,46 @@
+{
+  "name": "create-simple-react-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "TS_NODE_PROJECT=\"webpack-tsconfig.json\" webpack-dev-server --mode development --watch",
+    "build": "TS_NODE_PROJECT=\"webpack-tsconfig.json\" webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@types/copy-webpack-plugin": "^5.0.0",
+    "@types/express": "^4.17.0",
+    "@types/node": "^12.6.8",
+    "@types/query-string": "^6.3.0",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/webpack": "^4.4.35",
+    "@types/webpack-dev-server": "^3.1.7",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.3",
+    "html-loader": "^0.5.5",
+    "prop-types": "^15.7.2",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.0.4",
+    "ts-node": "^8.3.0",
+    "tsconfig-paths": "^3.8.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "query-string": "^6.8.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "use-query-params": "^0.3.3"
+  }
+}
