@@ -5,6 +5,11 @@ import useQueryParam from '../../hooks/use-query-params';
 export function Page() {
   const [x, setX] = useQueryParam('x');
   const [y, setY] = useQueryParam('y');
+  const [z, setZ] = useQueryParam('z');
+
+  React.useEffect(() => {
+    setZ(Math.random().toString());
+  }, [x]);
 
   return (
     <div>
@@ -12,9 +17,11 @@ export function Page() {
 
       <p>x: {x}</p>
       <p>y: {y}</p>
+      <p>z: {z}</p>
 
-      <button onClick={() => {setX(Math.random().toString()); setY(Math.random().toString())}}>Change</button>
-      <button onClick={() => setX(undefined)}>Undefine</button>
+      <button onClick={() => setX(Math.random().toString())}>Change X</button>
+      <button onClick={() => setY(Math.random().toString())}>Change Y</button>
+      <button onClick={() => setX(undefined)}>Undefine X</button>
     </div>
   );
 }
