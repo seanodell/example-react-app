@@ -1,7 +1,9 @@
 # Build files #
 #############
-node_modules
-dist
+/node_modules
+/dist
+/bin
+/test-app
 
 # IDE files #
 #############
@@ -13,3 +15,4 @@ nbproject
 .settings
 composer.lock
 *.code-workspace
+.DS_Store
