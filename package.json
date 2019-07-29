@@ -2,10 +2,14 @@
   "name": "create-simple-react-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "bin": {
+    "create-example-react-app": "bin/create-example-react-app.js"
+  },
   "scripts": {
-    "start": "TS_NODE_PROJECT=\"webpack-tsconfig.json\" webpack-dev-server --mode development --watch",
-    "build": "TS_NODE_PROJECT=\"webpack-tsconfig.json\" webpack --mode production"
+    "start-web": "TS_NODE_PROJECT=\"webpack-tsconfig.json\" webpack-dev-server --mode development --watch",
+    "build-web": "TS_NODE_PROJECT=\"webpack-tsconfig.json\" webpack --mode production",
+    "build-creator": "tsc -p ./src/bin",
+    "test-creator": "rm -rf test-app && npm run build-creator && create-example-react-app test-app"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +20,7 @@
     "@babel/preset-react": "^7.0.0",
     "@types/copy-webpack-plugin": "^5.0.0",
     "@types/express": "^4.17.0",
+    "@types/fs-extra": "^8.0.0",
     "@types/node": "^12.6.8",
     "@types/query-string": "^6.3.0",
     "@types/react": "^16.8.23",
@@ -37,6 +42,7 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
+    "fs-extra": "^8.1.0",
     "query-string": "^6.8.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
