@@ -37,21 +37,6 @@ export function Page() {
             <Button size="lg">Test {counter++}</Button>
           </Col>
         </Row>
-
-        <Row>
-          <Col md={{ span: 3, offset: 3 }}>
-            <Button size="lg">Test {counter++}</Button>
-          </Col>
-          <Col md={{ span: 3, offset: 3 }}>
-            <Button size="lg">Test {counter++}</Button>
-          </Col>
-        </Row>
-
-        <Row>
-          <Col md={{ span: 6, offset: 3 }}>
-            <Button size="lg">Test {counter++}</Button>
-          </Col>
-        </Row>
       </Container>
     </div>
   );
