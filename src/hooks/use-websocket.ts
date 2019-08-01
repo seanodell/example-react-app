@@ -9,6 +9,10 @@ export default function useWebSocket<T = any>(url: string, initial?: T) {
     sock.onmessage = (event: SockJS.MessageEvent) => {
       state[1](JSON.parse(event.data));
     };
+
+    return function cleanup() {
+      sock.close();
+    }
   }, []);
 
   return state[0];
